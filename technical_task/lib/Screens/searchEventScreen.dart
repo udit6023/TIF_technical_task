@@ -33,6 +33,12 @@ class _SearchEventScreenState extends State<SearchEventScreen> {
     super.initState();
   }
 
+@override
+  void dispose() {
+    // TODO: implement dispose
+    _controller.dispose();
+    super.dispose();
+  }
 
 
   @override

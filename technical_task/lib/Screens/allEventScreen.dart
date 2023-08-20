@@ -1,5 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:dio/dio.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:technical_task/Screens/searchEventScreen.dart';
@@ -10,11 +10,11 @@ import 'package:technical_task/utils/utility.dart';
 
 import '../bloc_file/bloc/bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:equatable/equatable.dart';
+
 
 import '../bloc_file/state/bloc_state.dart';
 import '../modals/allEvents.dart';
-import '../modals/searchEvents.dart';
+
 class allEvent extends StatefulWidget {
   const allEvent({super.key});
 
@@ -107,7 +107,8 @@ class _allEventState extends State<allEvent> {
       itemBuilder: (context, index) {
         
         return Card(
-           color: Color.fromARGB(255, 227, 230, 232),
+           elevation: 4,
+           color: Colors.white,
           child: InkWell(
             onTap: () {
                Navigator.of(context).push(MaterialPageRoute(builder: (context) => SingleEventScreen(id: model.content!.data![index].id,)));

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:technical_task/Screens/allEventScreen.dart';
-import 'package:technical_task/Screens/searchEventScreen.dart';
-import 'package:technical_task/Screens/singleEventScreen.dart';
+
 
 void main() {
   runApp(const MyApp());
